@@ -1,0 +1,25 @@
+.anim {
+    overflow: hidden; 
+border-right: .15em solid blue; 
+white-space: nowrap; 
+margin: 0 auto; 
+letter-spacing: .15em;
+animation: 
+typing 3s steps(30, end),
+blink-caret .75s step-end infinite;
+  }
+  @keyframes typing {
+from { width: 0 }
+to { width: 70% }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #33b5e5; }
+}
+
+@media (max-whidth : 480px) {
+  .anim {
+    font-size: 15px;
+  }
+}
